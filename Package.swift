@@ -14,6 +14,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/amplitude/Amplitude-iOS.git", from: "8.17.2"),
         .package(url: "https://github.com/DataDog/dd-sdk-ios.git", from: "2.3.0"),
+        .package(url: "https://github.com/jaypatel208/SharedSPM.git", branch: "main"),
     ]
     ,targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -21,7 +22,8 @@ let package = Package(
         .target(
             name: "MyFirstIOSLibrary",dependencies: [
                 .product(name: "Amplitude",package: "Amplitude-iOS"),
-                .product(name: "DatadogCore",package: "dd-sdk-ios")
+                .product(name: "DatadogCore",package: "dd-sdk-ios"),
+                .product(name: "shared",package: "SharedSPM")
             ]),
     ]
 )

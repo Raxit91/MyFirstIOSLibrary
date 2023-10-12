@@ -35,6 +35,15 @@
         "revision" : "1aed8f7dc79ce8e674c61e430ef51ca3db18cea9",
         "version" : "1.11.1"
       }
+    },
+    {
+      "identity" : "sharedspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jaypatel208/SharedSPM.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2d1d2799abc2028add71c24ccf8bed2a977d4389"
+      }
     }
   ],
   "version" : 2
